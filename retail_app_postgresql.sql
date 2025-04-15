@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS retail_app.employment_type (
 	employment_type_id TEXT PRIMARY KEY,
 	employment_type TEXT,
 	is_internal_employee BOOLEAN,
+	is_admin BOOLEAN,
 	vendor_name TEXT
 );
 
