@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS retail_app.employees (
 DROP TABLE IF EXISTS retail_app.payment;
 CREATE TABLE IF NOT EXISTS retail_app.payment (
 	payment_id TEXT PRIMARY KEY,
-   	total_amount FLOAT,
+   	total_amount NUMERIC,
 	payment_mode TEXT,
 	paid_on TIMESTAMP,
 	is_success BOOLEAN
@@ -70,8 +70,8 @@ CREATE TABLE IF NOT EXISTS retail_app.product_items (
 	item_description TEXT,
 	item_image JSON,
 	sold_by TEXT,
-	amount FLOAT,
-	discount FLOAT,
+	amount NUMERIC,
+	discount NUMERIC,
 	stock_count INT
 );
 
