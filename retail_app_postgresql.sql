@@ -41,8 +41,7 @@ CREATE TABLE IF NOT EXISTS retail_app.employees (
 DROP TABLE IF EXISTS retail_app.payment;
 CREATE TABLE IF NOT EXISTS retail_app.payment (
     payment_id TEXT PRIMARY KEY,
-    total_amount NUMERIC(10, 2),
-    payment_mode TEXT,
+    total_amount NUMERIC(10, 2), -- same as DECIMAL(10, 2)
     paid_on TIMESTAMP,
     is_success BOOLEAN
 );
