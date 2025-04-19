@@ -1,1 +1,1 @@
-# retail-app-management-sql
+# Retail Application Management
