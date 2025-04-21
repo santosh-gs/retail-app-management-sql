@@ -1,7 +1,7 @@
 DROP SCHEMA IF EXISTS retail_app CASCADE;
 CREATE SCHEMA IF NOT EXISTS retail_app;
 
--- Users table
+-- Users
 DROP TABLE IF EXISTS retail_app.users;
 CREATE TABLE IF NOT EXISTS retail_app.users (
     user_id TEXT PRIMARY KEY,
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS retail_app.orders (
     delivered_by TEXT REFERENCES retail_app.employees (employee_id)
 );
 
--- Order delivery stages
+-- Delivery stages
 DROP TABLE IF EXISTS retail_app.order_delivery;
 CREATE TABLE IF NOT EXISTS retail_app.order_delivery (
     row_id SERIAL PRIMARY KEY,
