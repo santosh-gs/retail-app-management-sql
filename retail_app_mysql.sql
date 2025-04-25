@@ -44,6 +44,7 @@ DROP TABLE IF EXISTS payment;
 CREATE TABLE payment (
     payment_id VARCHAR(255) PRIMARY KEY,
     total_amount DECIMAL(10,2),
+    payment_mode VARCHAR(255),
     paid_on TIMESTAMP,
     is_success TINYINT(1)
 );
